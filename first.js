@@ -36,9 +36,86 @@
 //     console.log(event.key)})
 
 const handleSubmit=function(event){
-    event.preventDefault()
-    console.log('form submitted')
-}
+//     event.preventDefault()
+//     console.log('form submitted')
+// }
 
-const form=document.querySelector('#myForm')
-form.addEventListener('submit',handleSubmit)git init
+// const form=document.querySelector('#myFo
+// form.addEventListener('submit',handleSubmit)
+// 
+// const btn=document.querySelector("button")
+// const div=document.querySelector(".container")
+
+// btn.addEventListener("click",function(){console.log('button')})
+// // default biubbling 
+// div.addEventListener("click",function(){console.log('.container')})
+
+
+// btn.addEventListener("click",function(){console.log('button')}, false )
+// // bubbling default for false
+// div.addEventListener("click",function(){console.log('.container')},false)
+
+debugger
+console.log(a);
+
+var a = 78   // part of global scope
+let b = 345 //  stored in script scope
+
+// console.log(a);
+// console.log(b);
+
+// function print(){
+//     let c = 45
+//     console.log(c);
+//     console.log("inside fn");
+// }
+// print()
+
+// let total = 100
+// function calculate(){
+//     console.log(total)
+//     let total = 100
+
+// }
+// calculate()
+
+// console.log("first line");
+// setTimeout(()=>{
+//     console.log("after 2 sec")
+// },2000);
+// console.log("second line")
+
+
+
+
+// setTimeout(()=>{
+//     alert("alert after 3 sec!!")
+// },3*1000);
+
+
+// setInterval(()=>{
+//     console.log("hello world!")
+// },2000); 
+
+
+
+// const timerId=setInterval(()=>{
+//     console.log("hello world!!")
+// },1000);
+
+// //console.log(timerId)
+// setTimeout(()=>{
+//     clearInterval(timerId)
+// },10*1000);
+
+
+
+
+
+// let count=1;
+
+// const id= setInterval(()=>{
+//     if(count===10)clearInterval(id)
+//     console.log(count)
+//     count++;
+// },1000);
