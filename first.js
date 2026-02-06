@@ -270,3 +270,191 @@
 
 //     input.value="";
 // })
+
+
+//6 feb
+
+
+// const p=new Promise()
+
+// console.log(p) //error
+
+// const p=new Promise(function(resolve,reject){
+//     resolve
+// })
+// console.log(p) 
+
+
+// const p=new Promise(function(resolve,reject){
+//     setTimeout(()=>{
+//         let done= true;
+//         if(done){
+//             resolve()
+
+//         }else{
+//             reject()
+//         }
+//     },5000)
+// })
+
+// console.log(p)
+
+
+
+// const p=new Promise(function(resolve,reject){
+//     setTimeout(()=>{
+//         let done= true;
+//         if(done){
+//             resolve()
+
+//         }else{
+//             reject()
+//         }
+//     },5000)
+// })
+
+// p.then(()=>{
+//     console.log("resolved")
+// }).catch(()=>{
+//     console.log("rejected")
+// })
+
+// const p=new Promise(function(resolve,reject){
+//     setTimeout(()=>{
+//         let done= false;
+//         if(done){
+//             resolve()
+
+//         }else{
+//             reject()
+//         }
+//     },5000)
+// })
+
+// p.then(()=>{
+//     console.log("resolved")
+// }).catch(()=>{
+//     console.log("rejected")
+// })
+
+
+
+// // const p=new Promise(function(resolve,reject){
+// //     setTimeout(()=>{
+// //         let done= true;
+// //         if(done){
+// //             resolve({name:"anusha",age:18})
+
+// //         }else{
+// //             reject("some error occurred")
+// //         }
+// //     },5000)
+// // })
+
+// // p.then((data)=>{
+// //     console.log("resolved",data)
+// // }).catch((err)=>{
+// //     console.log("rejected",err)
+// // })
+
+// // const p=new Promise(function(resolve,reject){
+// //     setTimeout(()=>{
+// //         let done= false;
+// //         if(done){
+// //             resolve({name:"anusha",age:18})
+
+// //         }else{
+// //             reject("some error occurred")
+// //         }
+// //     },5000)
+// // })
+
+// // p.then((data)=>{
+// //     console.log("resolved",data)
+// // }).catch((err)=>{
+// //     console.log("rejected",err)
+// // }).finally(()=>{
+// //     console.log("finaally block")
+// // })
+
+
+
+// const p=new Promise(function(resolve,reject){
+//     setTimeout(()=>{
+//         let done= false;
+//         if(done){
+//             resolve({name:"anusha",age:18})
+
+//         }else{
+//             reject("some error occurred")
+//         }
+//     },5000)
+// })
+
+// p.then((data)=>{
+//     console.log("resolved",data)
+// }).catch((err)=>{
+//     console.log("rejected",err)
+// }).finally(()=>{
+//     console.log("finally block")
+// })
+
+
+// function doHomework(){
+//     const p=new Promise(function(resolve,rejected){
+//         setTimeout(()=>{
+//             let done=true;
+//             if(done){
+//                 console.log("homework is done")
+//                 resolve("homework completed")
+//             }else{
+//                 rejected("homework not done")
+//             }
+//     },2000)
+// })
+// return p
+// }
+
+// function eatdinner(){
+//     const p=new Promise(function(resolve,rejected){
+//         setTimeout(()=>{
+//             let done=true;
+//             if(done){
+//                 console.log("dinner is eaten")
+//                 resolve("dinner eaten")
+//             }else{
+//                 rejected("dinner not eaten")
+//             }
+//     },2000)
+// })
+// return p
+// }
+
+// function goToPlayground(){
+//         const p=new Promise(function(resolve,rejected){
+//         setTimeout(()=>{
+//             let done=true;
+//             if(done){
+//                 console.log("playground is visited")
+//                 resolve("playground visited")
+//             }else{
+//                 rejected("playground not visited")
+//             }
+//     },2000)
+// })
+// return p
+// }
+
+// doHomework().then((data)=>{
+//     console.log(data)
+//     return eatdinner()
+// }).then((data)=>{
+//     console.log(data)
+//     return goToPlayground()
+// }).then((data)=>{
+//     console.log(data)   
+// }).catch((err)=>{
+//     console.log(err)
+// }).finally(()=>{
+//     console.log("all tasks are done")
+// })
