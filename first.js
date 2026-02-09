@@ -4,6 +4,8 @@
 // para.textContent='this is pra1';
 // console.log(para);
 
+
+
 // const para=document.getElementsByClassName('para')
 // para[0].textContent='this is para1'
 // para[1].style.color='pink'
@@ -12,10 +14,12 @@
 // console.log(para);
 
 
+
 // const para=document.querySelector('.para')
 // para.style.color='green'
 // para.textContent='this is para1'
 // console.log(para);
+
 
 
 // const para=document.querySelectorAll('.para')
@@ -23,6 +27,7 @@
 // para[0].textContent='this is para1'
 // para[1].style.color='blue'
 // para[1].innerHTML
+
 
 
 // const button=document.querySelector('#btn')
@@ -37,6 +42,7 @@
 //  button2.addEventListener('click',function(){
 //     button.removeEventListener('click',message)
 // //  })
+
 
 
 // const btn=document.querySelector('#btn')
@@ -60,9 +66,11 @@
 // div.addEventListener("click",function(){console.log('.container')})
 
 
+
 // btn.addEventListener("click",function(){console.log('button')}, false )
 // // bubbling default for false
 // div.addEventListener("click",function(){console.log('.container')},false)
+
 
 
 // debugger
@@ -80,6 +88,7 @@
 //     console.log("inside fn");
 // }
 // print()
+
 
 
 // let total = 100
@@ -102,6 +111,7 @@
 // setTimeout(()=>{
 //     alert("alert after 3 sec!!")
 // },3*1000);
+
 
 
 // setInterval(()=>{
@@ -146,6 +156,7 @@
 // greet(print)
 
 
+
 // function print(name){
 //     console.log("hello students!!", name);
 // }
@@ -158,6 +169,7 @@
 //     }, 2000)
 // }
 // greet(print)
+
 
 
 // console.log("starting homework....");
@@ -197,6 +209,7 @@
 //         goToPlayground();
 //     });
 // });
+
 
 
 // const input=document.querySelector('#task');
@@ -283,6 +296,7 @@
 //     resolve
 // })
 // console.log(p) 
+
 
 
 // const p=new Promise(function(resolve,reject){
@@ -458,3 +472,50 @@
 // }).finally(()=>{
 //     console.log("all tasks are done")
 // })
+
+
+//9 Feb//
+
+
+// console.log("first line")
+// setTimeout(()=>{
+//     console.log("inside timeout")
+// },0)
+
+
+// const p=new Promise((resolve,reject)=>{
+//     resolve()
+// })
+
+// p.then(()=>{
+//     console.log("inside promise")
+// }).catch(()=>{
+//     console.log("inside catch")
+// })
+
+
+// const p2= new Promise ((resolve,reject)=>{
+//     resolve()
+// })
+
+// p2.then(()=>{
+//     console.log("inside promise")
+// }).catch(()=>{
+//     console.log("inside catch")
+// })
+
+
+// const p3=new Promise((resolve,reject)=>{
+//     resolve()
+// })
+
+// p3.then(()=>{
+//     console.log("inside promise")
+// }).catch(()=>{
+//     console.log("inside catch")
+// })
+
+// console.log("last line")
+
+
+
