@@ -449,73 +449,185 @@
 //         setTimeout(()=>{
 //             let done=true;
 //             if(done){
-//                 console.log("playground is visited")
-//                 resolve("playground visited")
-//             }else{
-//                 rejected("playground not visited")
-//             }
-//     },2000)
-// })
-// return p
+// //                 console.log("playground is visited")
+// //                 resolve("playground visited")
+// //             }else{
+// //                 rejected("playground not visited")
+// //             }
+// //     },2000)
+// // })
+// // return p
+// // }
+
+// // doHomework().then((data)=>{
+// //     console.log(data)
+// //     return eatdinner()
+// // }).then((data)=>{
+// //     console.log(data)
+// //     return goToPlayground()
+// // }).then((data)=>{
+// //     console.log(data)   
+// // }).catch((err)=>{
+// //     console.log(err)
+// // }).finally(()=>{
+// //     console.log("all tasks are done")
+// // })
+
+
+// //9 Feb//
+
+
+// // console.log("first line")
+// // setTimeout(()=>{
+// //     console.log("inside timeout")
+// // },0)
+
+
+// // const p=new Promise((resolve,reject)=>{
+// //     resolve()
+// // })
+
+// // p.then(()=>{
+// //     console.log("inside promise")
+// // }).catch(()=>{
+// //     console.log("inside catch")
+// // })
+
+
+// // const p2= new Promise ((resolve,reject)=>{
+// //     resolve()
+// // })
+
+// // p2.then(()=>{
+// //     console.log("inside promise")
+// // }).catch(()=>{
+// //     console.log("inside catch")
+// // })
+
+
+// // const p3=new Promise((resolve,reject)=>{
+// //     resolve()
+// // })
+
+// // p3.then(()=>{
+// //     console.log("inside promise")
+// // }).catch(()=>{
+// //     console.log("inside catch")
+// // })
+
+// // console.log("last line")
+
+
+// //16 feb
+
+
+//  function orderFood(){
+//     return new Promise(function(resolve,reject){
+//         setTimeout(()=>{
+//             console.log("food ordered")
+//             resolve("food ordered")
+//         },1000)
+//     })
 // }
 
-// doHomework().then((data)=>{
+
+//  function prepareFood(){
+//     return new Promise(function(resolve,reject){
+//         setTimeout(()=>{
+//             console.log("food prepared")
+//             resolve("food prepared")
+//         },1000)
+//     })
+// }
+
+
+//  function deliverFood(){
+//     return new Promise(function(resolve,reject){
+//         setTimeout(()=>{
+//             console.log("food delivered")
+//             resolve("food delivered")
+//         },1000)
+//     })
+// }
+
+// orderFood().then((data)=>{
 //     console.log(data)
-//     return eatdinner()
+//     return prepareFood()
 // }).then((data)=>{
 //     console.log(data)
-//     return goToPlayground()
+//     return deliverFood()
 // }).then((data)=>{
-//     console.log(data)   
+//     console.log(data)
 // }).catch((err)=>{
 //     console.log(err)
-// }).finally(()=>{
-//     console.log("all tasks are done")
 // })
 
 
-//9 Feb//
+
+
+//  function orderFood(){
+//     return new Promise(function(resolve,reject){
+//         setTimeout(()=>{
+//             console.log("food ordered")
+//             resolve("food ordered")
+//         },1000)
+//     })
+// }
+
+
+//  function prepareFood(){
+//     return new Promise(function(resolve,reject){
+//         setTimeout(()=>{
+//             console.log("food prepared")
+//             resolve("food prepared")
+//         },1000)
+//     })
+// }
+
+
+//  function deliverFood(){
+//     return new Promise(function(resolve,reject){
+//         setTimeout(()=>{
+//             console.log("food delivered")
+//             resolve("food delivered")
+//         },1000)
+//     })
+// }
+
+// async function order(){
+//     const data=await orderFood()
+//     console.log(data)
+//     await prepareFood()
+//     await deliverFood()
+    
+// }
+// order()
+
 
 
 // console.log("first line")
-// setTimeout(()=>{
-//     console.log("inside timeout")
-// },0)
-
-
-// const p=new Promise((resolve,reject)=>{
-//     resolve()
-// })
-
-// p.then(()=>{
-//     console.log("inside promise")
-// }).catch(()=>{
-//     console.log("inside catch")
-// })
-
-
-// const p2= new Promise ((resolve,reject)=>{
-//     resolve()
-// })
-
-// p2.then(()=>{
-//     console.log("inside promise")
-// }).catch(()=>{
-//     console.log("inside catch")
-// })
-
-
-// const p3=new Promise((resolve,reject)=>{
-//     resolve()
-// })
-
-// p3.then(()=>{
-//     console.log("inside promise")
-// }).catch(()=>{
-//     console.log("inside catch")
-// })
-
+// try{
+//     let age=10
+//     if(age<18){
+//         throw new Error("access denied")
+//     }
+// }catch(error){
+//     console.log(error)
+// }finally{
+//     console.log("finally block")
+// }
 // console.log("last line")
 
 
-
+async function getData(){
+    try{
+        const response= await fetcg("https://dummyjson.com/products")
+        console.log(response.ok)
+        if (response.ok===false) throw new Error("data not found")
+        const data= await response.json()
+        console.log(data)
+    }catch(error){
+       console.log("data not found")
+    }
+}
+getData()
