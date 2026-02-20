@@ -619,15 +619,101 @@
 // console.log("last line")
 
 
-async function getData(){
-    try{
-        const response= await fetcg("https://dummyjson.com/products")
-        console.log(response.ok)
-        if (response.ok===false) throw new Error("data not found")
-        const data= await response.json()
-        console.log(data)
-    }catch(error){
-       console.log("data not found")
-    }
+// async function getData(){
+//     try{
+//         const response= await fetcg("https://dummyjson.com/products")
+//         console.log(response.ok)
+//         if (response.ok===false) throw new Error("data not found")
+//         const data= await response.json()
+//         console.log(data)
+//     }catch(error){
+//        console.log("data not found")
+//     }
+// }
+// getData()
+
+
+
+// async function sendData() {
+//     try{
+//         const response=await fetch("https://dummyjson.com/products",{
+//             method:"POST",
+//             headers: { 'Content-Type': 'application/json' },
+//             body: JSON.stringify({
+//                 title:"Macbook",
+//                 description :"macbook pro",
+//                 price: 120000,
+//                 discountPercentage: 10,
+//                 rating: 4.5,
+//                 stock: 50,
+//                 brand: "Apple",
+           
+//         })
+//     })
+
+//     const data=await response.json()
+//     console.log(data)
+//  }catch(error){
+//     console.log("data not found")
+//  }    
+// }
+// sendData()
+
+
+// async function sendData() {
+//     try{
+//         const response=await fetch('https://dummyjson.com/products/add',{
+//             method: 'POST',
+//             headers: { 'Content-Type': 'application/json' },
+//             body: JSON.stringify({
+//                 title:"Macbook",
+//                 description:"Macbook Pro",
+//                 price:100000,
+//                 discountPercentage:5,
+//                 rating:4.5,
+//                 stock:5,
+//                 brand:"Apple"
+//             })
+//         })
+//         const data=await response.json()
+//         console.log(data)
+//     }catch(error){
+//         console.log("Data not found")
+//     }
+// }
+// sendData()
+
+
+// let obj={
+//     title: "macbook",
+//     description: "macbook pro",
+// }
+// //  localStorage.setItem("obj",JSON.stringify(obj))
+// //     localStorage.setItem("name","anusha")
+// //     localStorage.setItem("age",18)
+// //     console.log(localStorage.getItem("name"))
+// //     console.log(localStorage.getItem("age"))
+// //     console.log(JSON.parse(localStorage.getItem("obj")))
+
+// //     localStorage.removeItem("age")
+
+// //     //localStorage.clear()
+
+
+// sessionStorage.setItem("obj",JSON.stringify(obj))
+// sessionStorage.setItem("name","anusha")
+// sessionStorage.setItem("age",18)
+// console.log(sessionStorage.getItem("name"))
+// console.log(sessionStorage.getItem("age"))
+// console.log(JSON.parse(sessionStorage.getItem("obj")))
+// sessionStorage.removeItem("age")
+
+
+document.cookie="name=xyz; expires= sat 21 feb 2024 12:00:00 UTC;"
+document.cookie="age=18; expires= sat 21 feb 2024 12:00:00 UTC;"
+console.log(document.cookie)
+async function sample(){
+    await fetch ("https://127.0.0.1:5500/index.html")
+
 }
-getData()
+sample()
