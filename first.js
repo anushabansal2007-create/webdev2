@@ -709,11 +709,66 @@
 // sessionStorage.removeItem("age")
 
 
-document.cookie="name=xyz; expires= sat 21 feb 2024 12:00:00 UTC;"
-document.cookie="age=18; expires= sat 21 feb 2024 12:00:00 UTC;"
-console.log(document.cookie)
-async function sample(){
-    await fetch ("https://127.0.0.1:5500/index.html")
+// document.cookie="name=xyz; expires= sat 21 feb 2024 12:00:00 UTC;"
+// document.cookie="age=18; expires= sat 21 feb 2024 12:00:00 UTC;"
+// console.log(document.cookie)
+// async function sample(){
+//     await fetch ("https://127.0.0.1:5500/index.html")
 
-}
-sample()
+// }
+// sample()
+
+
+//23 feb
+
+
+// function* generate(){
+//     yield 1
+//     yield 2
+//     yield 3
+
+//     for (let index = 1; index<4; index ++) {
+//         yield index   
+
+
+//     }
+//     let i=1;
+//     while(true){
+//         yield i 
+//         i++
+//     }
+// }
+
+// const gen= generate()
+
+// console.log(gen)
+// console.log(gen.next())
+// console.log(gen.next())
+// console.log(gen.next()) 
+// console.log(gen.next()) 
+
+
+// //1st way
+// function add (a){
+//     return function(b){
+//         return function(c){
+//             return a+b+c
+//         }
+//     }
+// }
+// console.log(add(1)(2)(3))
+
+//  //2nd way
+// function add (a){
+//     return function(b){
+//         return function(c){
+//             return a+b+c
+//         }
+//     }
+// }
+
+// const first=add(1)
+// const second=first(2)
+// const third=second(3)
+// console.log(third)
+
